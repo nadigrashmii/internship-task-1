@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", "Nunito", "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Steph";
+    src: url("steph-font.ttf");
+    font-weight: normal;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d0f4de;
+    color: black;
+    padding: 10px 20px;
+    border-bottom: dashed;
+    border-width: 2px;
+  }
+  
+  header .logo {
+    font-size: 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: white;
+    color: black;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #d0f4de;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 2px;
+  }
+  
+  .hero .cta:hover {
+    background: #d4d4d4;
+  }
+  
+  .headshot {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .headshot img {
+    width: 10%;
+    border-width: 3px;
+    border-radius: 50%;
+    border-color: #d0f4de;
+    border-style: solid;
+  }
+  
+  .about, .education, .skills, .certifications {
+    padding: 50px 20px;
+    background: white;
+    color: black;
+  }
+  
+  .about h2, .education h2, .skills h2, .certifications h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about ul, .education ul, .skills ul, .certifications ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .about ul li, .education ul li, .skills ul li, .certifications ul li {
+    background: #d0f4de;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #d0f4de;
+    color: black;
+  }
+  
+  footer a {
+    color: #d0f4de;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* @media queries for responsiveness */
+  
+  /* Tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .logo {
+      font-size: 18px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero {
+      padding: 50px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .headshot img {
+      width: 15%;
+    }
+  
+    .about ul, .education ul, .skills ul, .certifications ul {
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* Mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .logo {
+      font-size: 16px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero {
+      padding: 30px 10px;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero .cta {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .headshot img {
+      width: 25%;
+    }
+  
+    .about ul, .education ul, .skills ul, .certifications ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .about ul li, .education ul li, .skills ul li, .certifications ul li {
+      padding: 15px;
+    }
+  }
+  
